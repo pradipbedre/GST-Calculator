@@ -1,0 +1,78 @@
+body{
+
+background-color: rgb(221, 172, 253);
+}
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  margin-top: 50px;
+  height: 300px;
+  width: 400px;
+  border: dotted 10px rgb(205, 36, 64);
+  text-align: center;
+  padding: 50px 0;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+button{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: red;
+    transition: 0.3s;
+}
+label{
+   font-size: 20px;
+}
+input[type=number], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  @media (max-width:800px) {
+
+      .content{
+        height: 250px;
+        width: 250px;
+      }
+      input[type=number], select {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+  }
+  @media (max-width:450px) {
+
+    .content{
+      height: 250px;
+      width: 150px;
+      
+    }
+    input[type=number], select {
+      width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+}
